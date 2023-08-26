@@ -1,3 +1,7 @@
+function navigateToPage() {
+  window.location.href = "menuPage.html";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   fetch(
     "https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json"
@@ -35,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function takeOrder() {
   return new Promise((resolve, reject) => {
-
     const selectedBurgers = [
       { name: "cheeseBurger", price: "$5.99" },
       { name: "VegBurger", price: "$7.99" },
